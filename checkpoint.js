@@ -35,6 +35,9 @@ function logPokemonData(pokemon) {
 
         let outputString = pokemonName + ': ' + pokeType.join(', '); // Create the ouput string
         console.log(outputString);
+      })
+      .catch(function () {
+        console.log('The pokemon ' + element + ' does not exist.');
       });
   });
 }
