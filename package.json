@@ -1,0 +1,23 @@
+{
+  "name": "pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "checkpoint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtwidt/USAF-js-async-checkpoint.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtwidt/USAF-js-async-checkpoint/issues"
+  },
+  "homepage": "https://github.com/jtwidt/USAF-js-async-checkpoint#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.0"
+  }
+}
