@@ -22,7 +22,7 @@ function readInput(input) {
 function logPokemonData(pokemon) {
   // for each pokemon in the array
   pokemon.forEach((element) => {
-    fetch('https://pokeapi.co/api/v2/pokemon/' + element) //send a GET command with the pokemon name appended
+    fetch('https://pokeapi.co/api/v2/pokemon/' + element.toLowerCase()) //send a GET command with the pokemon name appended
       .then((response) => response.json())
       .then((data) => {
         let pokemonName = data.name; // get the name from the JSON reply
