@@ -26,14 +26,11 @@ function logPokemonData(pokemon) {
       .then((response) => response.json())
       .then((data) => {
         let pokemonName = data.name; // get the name from the JSON reply
-        let firstLetter = pokemonName.slice(0, 1); // the next 4 lines capitalize the first letter of the pokemon name
-        var restName = pokemonName.slice(1);
-        firstLetter = firstLetter.toUpperCase();
-        pokemonName = firstLetter + restName;
+        let fixedName = pokemonName[0].toUpperCase + pokemonName.slice(1); // Capitalize the Pokemon name
 
         let pokeType = data.types.map((kind) => kind.type.name); // Map any multiple types to a single array
 
-        let outputString = pokemonName + ': ' + pokeType.join(', '); // Create the ouput string
+        let outputString = fixedName + ': ' + pokeType.join(', '); // Create the ouput string
         console.log(outputString);
       })
       .catch(function () {
