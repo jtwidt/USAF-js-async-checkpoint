@@ -6,7 +6,7 @@
 // E - empty File; pokemon doesn't exist
 
 const fetch = require('node-fetch');
-var fs = require('fs');
+const fs = require('fs');
 
 function readInput(input) {
   // Reads an input file and returns the contents as a string
